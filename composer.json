@@ -1,0 +1,25 @@
+{
+	"name": "jegex/filament-tab-repeater",
+	"description": "Custom form repeater with tabs UI for FilamentPHP. This package extends the native `Filament\\Forms\\Components\\Repeater` to display items as tabs instead of a list.",
+    "license": "MIT",
+	"require": {
+	    "spatie/laravel-package-tools": "^1.93"
+	},
+	"autoload": {
+		"psr-4": {
+			"Jegex\\FilamentTabRepeater\\": "src/",
+			"Jegex\\FilamentTabRepeater\\Tests\\": "tests/",
+			"Jegex\\FilamentTabRepeater\\Database\\Factories\\": "database/factories/",
+			"Jegex\\FilamentTabRepeater\\Database\\Seeders\\": "database/seeders/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Jegex\\FilamentTabRepeater\\FilamentTabRepeaterServiceProvider"
+			]
+		}
+	},
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
