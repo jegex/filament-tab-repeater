@@ -5,6 +5,10 @@ namespace Jegex\FilamentTabRepeater;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
+/**
+ * Compatibility plugin retained for panels that registered the package
+ * explicitly before v2. The field itself does not require a panel plugin.
+ */
 class FilamentTabRepeaterPlugin implements Plugin
 {
     public function getId(): string
